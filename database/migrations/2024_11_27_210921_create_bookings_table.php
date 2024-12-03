@@ -24,7 +24,7 @@ return new class extends Migration
         $table->string('expert_address');
         $table->string('expert_image_url')->nullable();
         $table->string('user_address');
-        $table->timestamps();
+    
 
         // Foreign keys to link to users
         $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
